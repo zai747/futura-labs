@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+
+
+<link rel="stylesheet" href="./sat4.css">
+<div class='ripple-background'>
+    <div class='circle xxlarge shade1'></div>
+    <div class='circle xlarge shade2'></div>
+    <div class='circle large shade3'></div>
+    <div class='circle mediun shade4'></div>
+    <div class='circle small shade5'></div>
+</div>
+
+
+
+
+
+
+<form action="sat4home.html" onsubmit="return validate()">
+        <br>
+        <div class="container p-4 w-25 border" >
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" onkeyup="return passcheck()" required>
+          <br>
+          <div class="progress" style="height:35px ;">
+            <div class="progress-bar progress-bar-animated"  id="passstrength" role="progressbar" style="width: 0%; color: black; background-color: rgb(255, 0, 0);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">   Enter a password with Uppercase, lowercase and symbols</div>
+          </div> 
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+      </form>
+    
+    <script src="./sat4.js"></script>
+</body>
+</html>
