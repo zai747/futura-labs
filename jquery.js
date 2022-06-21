@@ -38,37 +38,4 @@ $(document).ready(() => {
           $("#sqr").animate({right: "250px"})
           $("#sqr").css({background:"#98bf21",height:"100px",width:"100px"})
         }
-
-        $("#start").click(() => {
-
-                $("#wimg").removeClass("start")
-                $("#wimg").addClass("walk")
-
-                var margin = 0;
-
-               
-                
-                setInterval(() => {
-
-                
-                        $("#wimg").css({"margin-left": margin + "px" })
-                        console.log(margin);
-                        margin += 4 ;
-
-                    
-
-                   
-                    
-                }, 20);
-    
-                
-        })
-        $("#stop").click(() => {
-
-            $("#wimg").stop()
-        } )
-
-        
-})
-
-
+    })

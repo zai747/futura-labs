@@ -10,3 +10,16 @@
     opacity: 1;
     
 }
+body{
+    background-color: RGB(252, 246, 246);
+}
+.flip{
+    
+      -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    
+}
+div{
+    display: flex;
+    align-items: center;
+}
