@@ -1,27 +1,3 @@
-const first = (callback) => {
-    setTimeout(() => {
-        console.log("hello");
-        callback()
-        
-    }, 3000);
-}
-
-const second = () => {
-    console.log("bye");
-}
-first(second)
-
-
-const clock = () => {
-    setInterval(() => {
-
-        let time = new Date
-        document.getElementById("clock").innerHTML = `time is ${time.getHours()} hours ${time.getMinutes()} minutes and ${time.getSeconds()} seconds`
-        
-    }, 1000);
-}
-clock();
-
 
 const add = (a,b,sub) => { 
    let sum = a + b;
