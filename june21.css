@@ -5,8 +5,8 @@
 }
 
 .walk{
-    height: 150px;
-    width: 150px;
+    height: 350px;
+    width: 350px;
     opacity: 1;
     
 }
@@ -19,7 +19,8 @@ body{
         transform: scaleX(-1);
     
 }
-div{
+.center{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
