@@ -77,7 +77,9 @@ var carlist = (cars => cars.forEach(elem =>  console.log(elem) ) )
 
 carlist(cars);
 
+
 let currency = prompt("Enter the amount you want to convert");
 let rate = prompt("Enter the exchange rate")
 var CurrencyConverter = ((currency, rate) => currency * rate )
 console.log("Your exchange amount is " + CurrencyConverter(currency, rate));
+
